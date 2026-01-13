@@ -4,18 +4,44 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  let nama = 'raja'
-  return (
-    <> {/* Fragment */}
-      <div>
-        <h1>Hello, World!</h1>
-        <h2>Selamat Datang {nama}</h2>
+  // let isLoggenIn = true
+  // let name = 'raja'
+  // if (isLoggenIn) {
+  //   return (
+  //     <div>
+  //       <h1>user {name} has logged in!</h1>
+  //     </div>
+  //   )
+  // } else {
+  //   return (
+  //     <div>
+  //       <h1>Please log in!</h1>
+  //     </div>
+  //   )
+  // }
 
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas corrupti doloremque ipsum asperiores voluptatum qui illo, magni nobis, blanditiis velit, molestiae enim ullam? Corporis itaque praesentium quisquam voluptatum vel soluta?</p>
-        <img src="/src/assets/react.svg" alt="react" />
-      </div>
-    </>
-  )
+  // let listBuah = ['apel', 'mangga', 'pisang', 'anggur']
+  // return (
+  //   <ul>
+  //     {listBuah.map((buah, index) => (
+  //       <li key = {buah}>{buah}</li>
+  //     ))}
+  //   </ul>
+  // )
+
+  let listHewan = []
+
+  if (listHewan.length === 0) {
+    return <h1>Data hewan kosong</h1>
+  } else {
+    return (
+      <ul>
+        {listHewan.map((hewan) => (
+          <li key={hewan}>{hewan}</li>
+        ))}
+      </ul>
+    )
+  }
 }
 
 export default App
