@@ -2,46 +2,19 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Footer from './components/Footer'
 
 function App() {
-  // let isLoggenIn = true
-  // let name = 'raja'
-  // if (isLoggenIn) {
-  //   return (
-  //     <div>
-  //       <h1>user {name} has logged in!</h1>
-  //     </div>
-  //   )
-  // } else {
-  //   return (
-  //     <div>
-  //       <h1>Please log in!</h1>
-  //     </div>
-  //   )
-  // }
+  return (
+    <>
+      <div>
+        <h1>Hello World!</h1>
+        <p>Selamat Datang di aplikasi React Pertamaku</p>
 
-  // let listBuah = ['apel', 'mangga', 'pisang', 'anggur']
-  // return (
-  //   <ul>
-  //     {listBuah.map((buah, index) => (
-  //       <li key = {buah}>{buah}</li>
-  //     ))}
-  //   </ul>
-  // )
-
-  let listHewan = []
-
-  if (listHewan.length === 0) {
-    return <h1>Data hewan kosong</h1>
-  } else {
-    return (
-      <ul>
-        {listHewan.map((hewan) => (
-          <li key={hewan}>{hewan}</li>
-        ))}
-      </ul>
-    )
-  }
+        <Footer/>
+      </div>
+    </>
+  )
 }
 
 export default App
