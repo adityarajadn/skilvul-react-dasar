@@ -1,11 +1,8 @@
-import 'style.css'
-
-function Card() {
+function Card(props) {
   return (
     <div>  
-        <span className='text'>
-            Ini adalah teks dengan style
-        </span>
+        <img src={props.img}/>
+        <h2>{props.name}</h2>
     </div>
   )
 }
